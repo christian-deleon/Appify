@@ -1,0 +1,19 @@
+{
+  "name": "appify",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron src/main/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-mac": "electron-packager src/main/main.js --overwrite --platform=darwin --arch=arm64 --prune=true --out=release-builds"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-packager": "^17.1.2"
+  }
+}
