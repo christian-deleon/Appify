@@ -2,6 +2,8 @@
 
 npm install
 
-npm run package-mac
+rm -rf dist
 
-cp -a ./release-builds/appify-darwin-arm64/appify.app /Applications/
+cd src
+
+npm run build --mac --verbose

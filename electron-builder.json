@@ -1,0 +1,41 @@
+{
+    "appId": "com.example.appify",
+    "productName": "Appify",
+    "copyright": "Copyright © 2024 Appify",
+    "mac": {
+      "category": "your.app.category",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "dmg": {
+      "iconSize": 80,
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "files": [
+      "**/*",
+      "!.env*",
+      "!*.md",
+      "!*.gitignore",
+      "!*.gitattributes",
+      "!*.gitmodules"
+    ],
+    "asar": true,
+    "directories": {
+      "app": ".",
+      "buildResources": "build"
+    }
+}
